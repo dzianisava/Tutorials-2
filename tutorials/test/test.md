@@ -1,7 +1,7 @@
 ---
 title: example new
 description: example
-tags: [tutorial:product/sapHana, tutorial:product/hana_studio]
+tags: [tutorial:product/sapHana, tutorial:product/hana_studio, tutorial>beginner, 123]
 ---
 
 
