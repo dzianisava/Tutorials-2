@@ -19,7 +19,7 @@ You will now create the HTML5 module to add basic web based content to your XSA 
 
 
 ### Time to Complete
-**20 Min**.
+**20 Min 40 min 50 min**.
 
 ---
 
