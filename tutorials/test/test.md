@@ -3,9 +3,9 @@ title: example new
 description: example
 tags: [tutorial:product/sapHana, tutorial:product/hana_studio]
 ---
-
-
-000000111456546 123456
+000000111456546
+123456
+```markup
     <?xml version="1.0" encoding="UTF-8"?>
     <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
     <display-name>cloud-weatherapp</display-name>
@@ -122,124 +122,119 @@ tags: [tutorial:product/sapHana, tutorial:product/hana_studio]
         <!-- Role Everyone will not be assignable -->
         <role-name>Everyone</role-name>
     </auth-constraint>
-
+```
 
 You can use:
 
-Text (including bold, italic, etc)
+***Text*** (including bold, italic, etc)
 
-Example: It's very easy to make some words bold and other words italic and bold italic with Markdown.
+  **Example:** 
+It's very easy to make some words **bold** and other words *italic* and ***bold italic*** with Markdown.
 
-You can use strikethrough font
+You can use ~~strikethrough~~ font
 
-Headers
+***Headers***
 
-Example: 
+  **Example:** 
+## This is an h2 header 
+### This is an h3 header
+###### This is an h6 header
 
-This is an h2 header
+***Lists***
 
-This is an h3 header
-
-This is an h6 header
-
-Lists
-
-Example: 
-
+  **Example:** 
+  
 Sometimes you want numbered lists:
-1.One
-2.Two 
-3.Three
+
+1. One
+2. Two 
+3. Three
 
 Sometimes you want bullet points:
-•Start a line with a star
-•Profit!
+
+* Start a line with a star
+* Profit!
 
 You can create nested lists: 
-•item1 ◦one_one
-◦two
+
+* item1
+    * one_one
+    * two
+
+***Blockquotes***
+
+  **Example:** 
+In the words of Abraham Lincoln:
+> Pardon my French
+
+***Links***
+
+  **Example:** 
+[Primer] [id]:
+[id]: http://tut.by
+
+<http://tut.by>
+
+<address@example.com>
+
+***There are three different types of messages: Note, Caution and Warning.***
+
+>### Warning
+>jhkjhkjhkjhkj
+>>### Warning
+>>>### Warning
+>>>>### Warning
+>>>>This is a Warning. 
+
+&nbsp;
+
+>### Caution
+>iikjhiojhioji
+>>### Caution
+>>This is a Caution. 
+
+&nbsp;
+
+>### Note
+
+>This is a note. 
+
+&nbsp;
+
+***Images*** (all images are stored on GitHub, URLs are rewritten to absolute)
+
+Format: `![Alt Text](url)`
+
+  **Example:** 
+![Image](https://octodex.github.com/images/yaktocat.png)
+![Example](http://www.kinomania.ru/images/posters/154766.jpg)
 
 
-Blockquotes
-
-Example: In the words of Abraham Lincoln:
+![Example](http://bestfotoposter.ru/downloads/priroda/more/6000%D1%854285-96dpi-foto-oblaka-nad-morem.jpg)
 
 
-Pardon my French
+***Code blocks:***
 
-Links
-
-Example: Primer:
-
-http://tut.by
-
-address@example.com
-
-There are three different types of messages: Note, Caution and Warning.
-
-
-Warning
-
-jhkjhkjhkjhkj
-
-
-Warning
-
-
-Warning
-
-
-Warning
-
-This is a Warning. 
-
- 
-
-
-Caution
-
-iikjhiojhioji
-
-
-Caution
-
-This is a Caution. 
-
- 
-
-
-Note
-
-This is a note. 
-
- 
-
-Images (all images are stored on GitHub, URLs are rewritten to absolute)
-
-Format:  ![Alt Text](url) 
-
-Example: Image Example
-
-Example
-
-Code blocks:
+```markup
  quit;
  !@#$%^&*&*(*(()_++|"}?><>??*&^%#!~~~~@33123-090=|"]?>{}|\\
   require 'redcarpet'
   markdown = Redcarpet.new("Hello World!")
   puts markdown.to_html
   exit;
+```
 
-
+```js
  quit;
  !@#$%^&*&*(*(()_++|"}?><>??*&^%#!~~~~@33123-090=|"]?>{}|\\
   require 'redcarpet'
   markdown = Redcarpet.new("Hello World!")
   puts markdown.to_html
   exit;
+```
 
-Example: 
-
+  **Example:** 
+```javascript
 quit;
 function fancyAlert(arg) { function fancyAlert(arg) {function fancyAlert(arg) {function fancyAlert(arg) {function fancyAlert(arg) {function fancyAlert(arg) {function fancyAlert(arg) { 
   if(arg) {
@@ -467,38 +462,30 @@ function fancyAlert(arg) {
 }
 function fancyAlert(arg) {
   if(arg) {199
+```
+***Task Lists*** (Please note, this requires empty line before task list):
 
-Task Lists (Please note, this requires empty line before task list):
+  **Example:** 
+  
+- [x] @mentions, #refs, [links](), **formatting**, and ~~tags~~ supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
 
-Example: 
- @mentions, #refs, links, formatting, and tags supported
- list syntax required (any unordered or ordered list supported)
- this is a complete item
- this is an incomplete item
+***Tables:***
 
-Tables:
+  **Example:** 
 
-Example: 
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
-
-First Header
-
-Second Header
-
-
-Content from cell 1 Content from cell 2 
-Content in the first column Content in the second column 
 
 and
 
-
-Left-Aligned
-
-Center Aligned
-
-Right Aligned
-
-
-col 3 is some wordy text $1600 
-col 2 is centered $12 
-zebra stripes are neat $1 
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
