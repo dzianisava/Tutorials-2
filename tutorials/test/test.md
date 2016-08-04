@@ -5,11 +5,8 @@ tags: [tutorial:product/sapHana, tutorial:product/hana_studio, tutorial>beginner
 ---
 
 
-## Prerequisites
 
-  - **Proficiency:** Intermediate
-
-## Next Steps
+### Next Steps
  
   - [Landscape Configuration](http://go.sap.com/developer/tutorials/ci-best-practices-landscape.html)
   - [Back to the Navigator](http://go.sap.com/developer/tutorials/ci-best-practices-intro.html)
