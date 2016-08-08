@@ -8,12 +8,10 @@ tags: [  tutorial>intermediate, tutorial:type/project  ]
 ---
 
 ## Prerequisites
-
   - **Proficiency:** Intermediate
 
 ### Next Steps
- 
-  - [Landscape Configuration](http://go.sap.com/developer/tutorials/ci-best-practices-landscape.html)
+   - [Landscape Configuration](http://go.sap.com/developer/tutorials/ci-best-practices-landscape.html)
   - [Back to the Navigator](http://go.sap.com/developer/tutorials/ci-best-practices-intro.html)
   
 ---
