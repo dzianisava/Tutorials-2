@@ -5,9 +5,7 @@ tags: [  tutorial>beginner, topic>html5, topic>sapui5, products>sap-hana-cloud-p
 ---
 ## Prerequisites  
  - **Proficiency:** Beginner 
-
  - **Web IDE** If you don't have the Web IDE open, follow these steps: [Enable and open the HANA Cloud Platform Web IDE](https://go.sap.com/developer/tutorials/sapui5-webide-open-webide.html)
-
  - **Tutorials:** This tutorial is part of a series.  The previous tutorial is [Set up the Northwind Destination](https://go.sap.com/developer/tutorials/hcp-create-destination.html)
 
 ## Next Steps
@@ -67,7 +65,9 @@ Now, we will connect the destination (created in the last tutorial) to the local
 
     ```JavaScript
     ,
-    "" : {        "dataSource": "mainService"    }
+    "" : {
+        "dataSource": "mainService"
+    }
     ```
     
 
@@ -85,7 +85,15 @@ Now, we will connect the destination (created in the last tutorial) to the local
 9.  Add the following code, in the *routes* area, under the last section.  When you are done, you should have 3 routes.
 
     ```JavaScript
-    ,	{		"path": "/destinations/Northwind",		"target": {			"type": "destination",			"name": "Northwind"		},		"description": "Northwind Destination"	}
+    ,
+	{
+		"path": "/destinations/Northwind",
+		"target": {
+			"type": "destination",
+			"name": "Northwind"
+		},
+		"description": "Northwind Destination"
+	}
 	```
 	
     ![Save the data source, and return to the main screen](9.png)
