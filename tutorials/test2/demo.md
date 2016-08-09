@@ -11,7 +11,19 @@ qrcode: true
  - **Tutorials:** This tutorial is part of a series.  The previous tutorial is [Set up the Northwind Destination](https://go.sap.com/developer/tutorials/hcp-create-destination.html)
 
 ### Time to Complete
-bxcvbvlcbjkcvjjbklcvbjcvklbjln
+bxcvbvlcbjkcvjjbklcvbjcv
+gnfdgdflgj
+';h''gfh;ldhf
+dflh';hd
+hgldfhl\dflh
+dfhldf\h
+dfshd;fsh
+df;
+hdfsh;dfs;h
+dfhdfhgfgdhjdgfh
+fgdh
+gfh
+gfhklbjln
 **fgokldrfgjmdlf dfhjldfjlgh dflgjdfsgi;dfjpsgjsibhjpgfjs**.
 
 ## Next Steps
