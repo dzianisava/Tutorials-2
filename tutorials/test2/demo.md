@@ -5,6 +5,20 @@ tags: [tutorial>www, tutorial>www, tutorial>lll, agreements>Service-Descriptions
 qrcode: true
 ---
 
+## Prerequisites  
+ - **Proficiency:** Beginner 
+ - **Web IDE** If you don't have the Web IDE open, follow these steps: [Enable and open the HANA Cloud Platform Web IDE](https://go.sap.com/developer/tutorials/sapui5-webide-open-webide.html)
+ - **Tutorials:** This tutorial is part of a series.  The previous tutorial is [Set up the Northwind Destination](https://go.sap.com/developer/tutorials/hcp-create-destination.html)
+### Time to Complete
+**15-20 Minutes**.
+
+## Next Steps
+ - This tutorial is part of a series.  The next tutorial is part 4: [Add a list to the current view](https://go.sap.com/developer/tutorials/sapui5-webide-add-list.html)
+
+## Details
+### You will learn  
+Now that you have set up a Destination in the HANA Cloud Platform (HCP) cockpit, you will connect that destination to your local application.  
+
 
 ## Prerequisites  
 - [Access your first data in a SAP HANA XSC Application](http://go.sap.com/developer/tutorials/hana-data-access-authorizations.html)
