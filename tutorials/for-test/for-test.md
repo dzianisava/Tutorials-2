@@ -19,6 +19,8 @@ For this part of the series, you will consume a RESTful weather service that ret
 
  >Note: In order to consume the openweathermap API you need to apply for an API key as outlined here: <http://openweathermap.org/appid>. But don’t worry, that’s easy to do and won’t take longer than two minutes!
 
+&nbsp;
+
 
 ### Time to Complete
 **10 min**
