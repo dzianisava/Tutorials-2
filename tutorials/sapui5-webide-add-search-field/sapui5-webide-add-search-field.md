@@ -72,10 +72,10 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
 	![Add the handleSearch method to the controller](2.png)
 	 
 3.  Run your application.  You should see the search box at the top of the list, right below the words `Product Overview`.
-   
-   > **NOTE**: If the search does not work, check the `View1.view.xml` file, and make sure the `<List>` element has an *id* parameter.
-   
-       ![Search field is displayed](3.png)
+    
+    > **NOTE**: If the search does not work, check the `View1.view.xml` file, and make sure the `<List>` element has an *id* parameter.
+    
+    ![Search field is displayed](3.png)
 
 
 ## Next Steps
