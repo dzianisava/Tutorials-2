@@ -9,6 +9,7 @@ tags: [  tutorial>intermediate, tutorial:type/project ]
 ## Prerequisites  
 
   - **Proficiency:** Intermediate
+  - test
 
 ## Next Steps
  
