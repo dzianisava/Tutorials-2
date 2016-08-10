@@ -24,7 +24,7 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
 
 ---
 
-1.  Open the `webapp/view/View1.view.xml` file, and add the following code to the `<Page>` element:
+    1.  Open the `webapp/view/View1.view.xml` file, and add the following code to the `<Page>` element:
 
     ```xml
     <subHeader>
@@ -47,7 +47,7 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
 
    ![Adding a subHeader element](1b.png)
    
-2.  Open the `webapp/view/View1.controller.js` file, and update the Controller with the following new functionality:
+    2.  Open the `webapp/view/View1.controller.js` file, and update the Controller with the following new functionality:
 
     >**Note** Be careful with the exact placement of this code.  The code should go after a single closed braces `}`, on line 14.
     
