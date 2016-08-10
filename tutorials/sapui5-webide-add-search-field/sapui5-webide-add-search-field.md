@@ -35,7 +35,7 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
 	 		</contentLeft>
 	 	</Bar>
 	 </subHeader>
-	```
+    ```
 	
    ![Adding a subHeader element](1a.png)
 	 
