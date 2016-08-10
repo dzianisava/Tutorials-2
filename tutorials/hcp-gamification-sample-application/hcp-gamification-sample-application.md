@@ -6,6 +6,7 @@ tags: [  tutorial>beginner, topic>cloud, products>sap-hana-cloud-platform ]
 ## Prerequisites  
  - **Proficiency:** Beginner
  - **Tutorials:** [Enable and configure the SAP HANA Cloud Platform, gamification service](http://go.sap.com/developer/tutorials/hcp-gamification-service-enable.html)
+
 ## Next Steps
  - [Deploy gamified HelpDesk application to the SAP HANA Cloud Platform](http://go.sap.com/developer/tutorials/hcp-deploy-gamified-application.html)
 
