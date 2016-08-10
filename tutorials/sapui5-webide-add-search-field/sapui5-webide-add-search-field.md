@@ -44,8 +44,7 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
    ```
    id="List"
    ```
-   
-	![Adding an id tag to the List element](1b.png)
+   	![Adding an id tag to the List element](1b.png)
    
 2.  Open the `webapp/view/View1.controller.js` file, and update the Controller with the following new functionality:
 
