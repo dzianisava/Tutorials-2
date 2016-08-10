@@ -76,8 +76,8 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
    
    > **NOTE**: If the search does not work, check the `View1.view.xml` file, and make sure the `<List>` element has an *id* parameter.
    
-![Add the handleSearch method to the controller](3.png)	
-![Search field is displayed](3.png)
+
+   ![Search field is displayed](3.png)
 
 
 ## Next Steps
