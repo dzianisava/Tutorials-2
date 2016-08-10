@@ -36,16 +36,15 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
 	 </subHeader>
     ```
 	
-   ![Adding a subHeader element](1a.png)
-	 
-   You will also need to add an ID field to the `<List>` element, directly below.  Add this to the `<List>` element:
-   
-   
-   ```
-   id="List"
-   ```
-
-   ![Adding a subHeader element](1b.png)
+    ![Adding a subHeader element](1a.png)
+        
+    You will also need to add an ID field to the `<List>` element, directly below.  Add this to the `<List>` element:
+      
+    ```
+    id="List"
+    ```
+    
+    ![Adding a subHeader element](1b.png)
    
    2.  Open the `webapp/view/View1.controller.js` file, and update the Controller with the following new functionality:
     
