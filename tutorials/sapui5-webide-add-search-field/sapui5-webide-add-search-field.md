@@ -36,7 +36,7 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
 	 </subHeader>
 	```
 	
-	![Adding a subHeader element](1a.png)
+    ![Adding a subHeader element](1a.png)
 	 
    You will also need to add an ID field to the `<List>` element, directly below.  Add this to the `<List>` element:
    
