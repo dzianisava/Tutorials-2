@@ -35,8 +35,7 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
 	 	</Bar>
 	 </subHeader>
 	```
-	
-    ![Adding a subHeader element](1a.png)
+        ![Adding a subHeader element](1a.png)
 	 
    You will also need to add an ID field to the `<List>` element, directly below.  Add this to the `<List>` element:
    
@@ -44,7 +43,7 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
    ```
    id="List"
    ```
-   	 ![Adding a subHeader element](1b.png)
+       ![Adding a subHeader element](1b.png)
    
 2.  Open the `webapp/view/View1.controller.js` file, and update the Controller with the following new functionality:
 
@@ -75,8 +74,7 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
    
    > **NOTE**: If the search does not work, check the `View1.view.xml` file, and make sure the `<List>` element has an *id* parameter.
    
-
-   ![Search field is displayed](3.png)
+       ![Search field is displayed](3.png)
 
 
 ## Next Steps
