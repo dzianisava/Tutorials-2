@@ -47,11 +47,11 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
 
    ![Adding a subHeader element](1b.png)
    
-    2.  Open the `webapp/view/View1.controller.js` file, and update the Controller with the following new functionality:
-
+   2.  Open the `webapp/view/View1.controller.js` file, and update the Controller with the following new functionality:
+    
     >**Note** Be careful with the exact placement of this code.  The code should go after a single closed braces `}`, on line 14.
     
-
+    
 	```javascript
    		,
 		handleSearch : function (evt) {
@@ -69,7 +69,7 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
 			binding.filter(filters);
 		} 
 	```
-  
+    
 	![Add the handleSearch method to the controller](2.png)
 	 
 3.  Run your application.  You should see the search box at the top of the list, right below the words `Product Overview`.
