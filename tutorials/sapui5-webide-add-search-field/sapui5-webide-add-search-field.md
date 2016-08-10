@@ -24,7 +24,7 @@ To handle the search, we’ll specify a handler for the search field’s ‘sear
 
 ---
 
-    1. Open the `webapp/view/View1.view.xml` file, and add the following code to the `<Page>` element:
+   1. Open the `webapp/view/View1.view.xml` file, and add the following code to the `<Page>` element:
     
     ```xml
     <subHeader>
