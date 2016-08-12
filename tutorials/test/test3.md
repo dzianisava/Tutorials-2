@@ -12,8 +12,15 @@ tags: [tutorial:product/sapHana, tutorial:product/hana_studio, tutorial>beginner
 ## 000000111456546
 123456
 
+Prerequisites
 
-  **Example:** 
-## This is an h2 header 
-### This is an h3 header
-###### This is an h6 header
+    Proficiency: Intermediate
+    gfhgfhgfhgf
+    gfhgfhgfhgfd
+
+Next Steps
+
+    Landscape Configuration
+        Back to the Navigator
+
+What we offer in this part is not more than a basic recipe to set up a minimum installation including only those components on Linux that we consider as absolutely necessary to run a CI/CD process for development with SAP. However, the setup best suited to your concrete requirements cannot be part of this document because it highly depends on your concrete local situation, the network
