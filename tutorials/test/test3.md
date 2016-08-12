@@ -11,9 +11,8 @@ tags: [tutorial:product/sapHana, tutorial:product/hana_studio, tutorial>beginner
 
 ## Prerequisites
 
-    Proficiency: Intermediate
-    gfhgfhgfhgf
-    gfhgfhgfhgfd
+gfhgfhgfhgf
+gfhgfhgfhgfd
 
 ## Next Steps
 
