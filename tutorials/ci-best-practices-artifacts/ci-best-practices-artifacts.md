@@ -20,7 +20,7 @@ What we offer in this part is not more than a basic recipe to set up a minimum i
  
 If you are interested in other examples of CI/CD processes with a focus on specific needs and local conditions, just follow the references we provide to the official documentation for the described components. For each component, we provide hints to how the described setup could be improved. This concerns the professional and reliable operation, for example, further security activities and operational refinements.
 
-Note: This document is restricted to the description of component installation on Linux. For installation on Windows, we refer to the installation documentation on the web.
+Note: This document is restricted to the description of component installation on Linux. For installation on Windows, we refer to the installation documentation on the web. 
 
 
 
