@@ -6,6 +6,7 @@ tags: [tutorial:product/sapHana, tutorial:product/hana_studio, tutorial>beginner
 
 
 
+
 ### Next Steps
  
   - [Landscape Configuration](http://go.sap.com/developer/tutorials/ci-best-practices-landscape.html)
