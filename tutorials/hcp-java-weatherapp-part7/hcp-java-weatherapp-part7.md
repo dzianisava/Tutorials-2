@@ -18,8 +18,8 @@ In this tutorial you will enhance the persistence layer with a multi-tenancy fea
 **10 min**
 
 ---
-
-1. First, we’ll add the necessary annotations to the persistence `BaseObject` class. Open it and add the following two annotations to the class definition:
+[ACCORDION-BEGIN [STEP 1]()]
+First, we’ll add the necessary annotations to the persistence `BaseObject` class. Open it and add the following two annotations to the class definition:
 
     ```java
     @MappedSuperclass
@@ -30,7 +30,11 @@ In this tutorial you will enhance the persistence layer with a multi-tenancy fea
 
     ![Adding Java annotations to a Java Class](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/hcp-java-weatherapp-part7/e2e_07-1.png)
 
-2. Next, we need to slightly adjust the way we obtain a reference to the `EntityManager` within the `FavoriteCityService` class as we now need to pass the current tenant ID (in our case the user ID). The following code snippet illustrates the concept:
+[DONE]
+[ACCORDION-END] 
+
+[ACCORDION-BEGIN [STEP 2]()]
+Next, we need to slightly adjust the way we obtain a reference to the `EntityManager` within the `FavoriteCityService` class as we now need to pass the current tenant ID (in our case the user ID). The following code snippet illustrates the concept:
 
     ```java
     @SuppressWarnings("unchecked")
@@ -53,12 +57,22 @@ In this tutorial you will enhance the persistence layer with a multi-tenancy fea
     ```
     ![Modifying Java methods to handle the tenant ID](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/hcp-java-weatherapp-part7/e2e_07-2.png)
 
-3. Make your changes to the methods (`getFavoriteCity()`, `addFavoriteCity()` and `removeFavoriteCity()` ) in the `FavoriteCityService` respectively and save all edits.
+[DONE]
+[ACCORDION-END] 
+
+[ACCORDION-BEGIN [STEP 3]()]
+Make your changes to the methods (`getFavoriteCity()`, `addFavoriteCity()` and `removeFavoriteCity()` ) in the `FavoriteCityService` respectively and save all edits.
 
     ![Modifying Java methods to handle the tenant ID](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/hcp-java-weatherapp-part7/e2e_07-3.png)
 
-4. Deploy/publish your changes. Please explicitly stop and start the server, as you have updated the persistence model!
+[DONE]
+[ACCORDION-END] 
 
+[ACCORDION-BEGIN [STEP 4]()]
+Deploy/publish your changes. Please explicitly stop and start the server, as you have updated the persistence model!
+
+[DONE]
+[ACCORDION-END] 
 
 
 ## Next Steps
