@@ -60,7 +60,7 @@ Next, we need to slightly adjust the way we obtain a reference to the `EntityMan
 [ACCORDION-BEGIN [STEP 3]()]
 Make your changes to the methods (`getFavoriteCity()`, `addFavoriteCity()` and `removeFavoriteCity()` ) in the `FavoriteCityService` respectively and save all edits.
 
-    ![Modifying Java methods to handle the tenant ID](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/hcp-java-weatherapp-part7/e2e_07-3.png)
+![Modifying Java methods to handle the tenant ID](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/hcp-java-weatherapp-part7/e2e_07-3.png)
 [ACCORDION-END] 
 
 [ACCORDION-BEGIN [STEP 4]()]
