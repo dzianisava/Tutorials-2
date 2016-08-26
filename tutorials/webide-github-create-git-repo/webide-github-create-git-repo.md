@@ -46,8 +46,9 @@ Enter the repository name, description and click on **Initialize this repository
 
     ![Repository details](p2_4.png)
 
-[DONE]
 [ACCORDION-END]
+
+[DONE]
 
 [ACCORDION-BEGIN [STEP 5](#the step)]
 If you did not select the option to **Initialize this repository with a README**, create an initial commit by adding a Readme file. You can keep this readme file simple for now and add in details later
