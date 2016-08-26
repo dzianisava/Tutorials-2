@@ -29,9 +29,7 @@ First, we’ll add the necessary annotations to the persistence `BaseObject` cla
     ```
 
     ![Adding Java annotations to a Java Class](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/hcp-java-weatherapp-part7/e2e_07-1.png)
-
 [ACCORDION-END] 
-
 [ACCORDION-BEGIN [STEP 2]()]
 Next, we need to slightly adjust the way we obtain a reference to the `EntityManager` within the `FavoriteCityService` class as we now need to pass the current tenant ID (in our case the user ID). The following code snippet illustrates the concept:
 
@@ -56,13 +54,11 @@ Next, we need to slightly adjust the way we obtain a reference to the `EntityMan
     ```
     ![Modifying Java methods to handle the tenant ID](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/hcp-java-weatherapp-part7/e2e_07-2.png)
 [ACCORDION-END] 
-
 [ACCORDION-BEGIN [STEP 3]()]
 Make your changes to the methods (`getFavoriteCity()`, `addFavoriteCity()` and `removeFavoriteCity()` ) in the `FavoriteCityService` respectively and save all edits.
 
 ![Modifying Java methods to handle the tenant ID](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/hcp-java-weatherapp-part7/e2e_07-3.png)
 [ACCORDION-END] 
-
 [ACCORDION-BEGIN [STEP 4]()]
 Deploy/publish your changes. Please explicitly stop and start the server, as you have updated the persistence model!
 [ACCORDION-END] 
