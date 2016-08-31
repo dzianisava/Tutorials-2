@@ -27,14 +27,19 @@ New to HANA in SPS 11 is the HANA Deployment Infrastructure or HDI. The goal of 
 
 HDI introduces the concept of the container as an abstraction of the Schema. The container in turn dynamically generates the Schema, a container-specific Database User who owns all objects, and a password for that database user. XS Advanced based services then only need access to the container and never need to know the actual Schema, technical user, or password. All of that information is stored within the container definition. 
 
+[ACCORDION-BEGIN [STEP 1](1)]
 1. Begin by selecting your project and then choosing `New -> HDB Module`
 
     ![New Module](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/1.png)
 
 2. Name this new module `db`. Then press Next. 
-    
+
     ![Create module](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/2.png)
-    
+  
+[DONE]
+[ACCORDION-END] 
+      
+[ACCORDION-BEGIN [STEP 2](2)]
 3. Although the namespace for database artifacts is optional in HDI input the namespace `dev602`. Press Next.
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/3.png)
@@ -42,32 +47,53 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 4. Press Finish to complete the creation of the HDB Module. 
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/4.png)
-    
+ 
+[DONE]
+[ACCORDION-END] 
+
 5. The wizard has created the `db` folder as well as the `hdi-container` resource and the `db` module in the `mta.yaml` file for you. 
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/5.png)
-    
-6. You will be able to see some of the additional files that the module creation wizard created if you choose `View->Show Hidden Files`  
+
+[ACCORDION-BEGIN [STEP 3](3)]
+
+You will be able to see some of the additional files that the module creation wizard created if you choose `View->Show Hidden Files`  
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/6.png)
-    
-7. The `db/src` folder is where your actual database development objects belong. There are two configuration files in the root of this folder. The `.hdiconfig` file maps the file extensions to the specific server side activation plug-ins. This way you can choose any file extensions you wish to use as long as you map them to the correct plug-ins. However we will use the default mappings for now. 
+  
+[DONE]
+[ACCORDION-END] 
+
+[ACCORDION-BEGIN [STEP 4](4)]
+The `db/src` folder is where your actual database development objects belong. There are two configuration files in the root of this folder. The `.hdiconfig` file maps the file extensions to the specific server side activation plug-ins. This way you can choose any file extensions you wish to use as long as you map them to the correct plug-ins. However we will use the default mappings for now. 
 
 	The `.hdinamespace` file configures the package namespace for your development objects. As we no longer use the HANA Repository to hold design time objects, this file provides the same service as the folder structure in the Repository used to. 
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/7.png)
     
-8. In the `src` folder we will create several development objects. First create a folder called data in the `src` folder. 
+[DONE]
+[ACCORDION-END] 
+
+[ACCORDION-BEGIN [STEP 5](5)]
+In the `src` folder we will create several development objects. First create a folder called data in the `src` folder. 
 
 	Then `New->CDS Artifact` to create the core database tables and views in our application. 
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/8.png)	
 
-9. Name the new CDS file `PurchaseOrder` and press Create
+[DONE]
+[ACCORDION-END] 
+
+[ACCORDION-BEGIN [STEP 6](6)]
+Name the new CDS file `PurchaseOrder` and press Create
 	
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/9.png)	
-	
-10. `hdbcds` is the new file extension replacing `hdbdd`. It contains the table and view definitions. We are creating a simple Purchase Order Header and Item data model. 
+
+[DONE]
+[ACCORDION-END] 
+
+[ACCORDION-BEGIN [STEP 7](7)]
+`hdbcds` is the new file extension replacing `hdbdd`. It contains the table and view definitions. We are creating a simple Purchase Order Header and Item data model. 
 
 	The syntax is the same as `CDS-based` development objects previously.
 
@@ -143,7 +169,11 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 	};
 	```	
 
-11. Look at the syntax you just entered into the `hdbcds` file in more detail. 
+[DONE]
+[ACCORDION-END] 
+
+[ACCORDION-BEGIN [STEP 8](8)]
+Look at the syntax you just entered into the `hdbcds` file in more detail. 
 
 	First you need to define some reusable elemental types. These will later be used to define the data type of individual columns in our tables. Within the `PurchaseOrder` context, create element types for `BusinessKey`, `SDate`, `CurrencyT`, `AmountT`, `QuantityT`, `UnitT`, and `StatusT`.
 	
@@ -157,8 +187,11 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 		type UnitT: String(3);
 		type StatusT: String(1);
 	```
-	
-12. You can also create reusable structures with multiple fields. This is useful when the same sets of fields are repeated in multiple tables. Create a reusable structure for History – with `CREATEDBY`, `CREATEDAT`, `CHANGEDBY`, and `CHANGEDAT` fields.
+
+[DONE]
+[ACCORDION-END] 
+[ACCORDION-BEGIN [STEP 9](9)]
+You can also create reusable structures with multiple fields. This is useful when the same sets of fields are repeated in multiple tables. Create a reusable structure for History – with `CREATEDBY`, `CREATEDAT`, `CHANGEDBY`, and `CHANGEDAT` fields.
 	
 
 	```
@@ -170,7 +203,10 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
         };
 	```
 
-13. The syntax for creating Entities is similar to types. Entities will become database tables when activating the `hdbcds` file.
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 10](10)]
+The syntax for creating Entities is similar to types. Entities will become database tables when activating the `hdbcds` file.
 
 	```
 	Entity Header {
@@ -192,16 +228,25 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
           column store;
       };
 	``` 
-	
-14. With the tables we created, you use a unique order id number as the primary key. Therefore you need a sequence to have an auto incrementing unique id generated when new data is inserted. Create a new sequence by right-clicking on the data folder and choosing “New”, then “File”.
+
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 11](11)]
+With the tables we created, you use a unique order id number as the primary key. Therefore you need a sequence to have an auto incrementing unique id generated when new data is inserted. Create a new sequence by right-clicking on the data folder and choosing “New”, then “File”.
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/10.png)
 
-15. Enter the name of the file as `orderId.hdbsequence`. Click “OK”.
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 12](12)]
+Enter the name of the file as `orderId.hdbsequence`. Click “OK”.
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/11.png)
 
-16. Create a non-cycling sequence within your schema starting from 200000000 and ending with 299999999. Make it dependent upon your header table with the full package id on the front of the header table name. Save your sequence file.
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 13](13)]
+Create a non-cycling sequence within your schema starting from 200000000 and ending with 299999999. Make it dependent upon your header table with the full package id on the front of the header table name. Save your sequence file.
 
 	```
 	SEQUENCE "dev602.data::orderId" 
@@ -213,11 +258,18 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 	FROM "dev602.data::PurchaseOrder.Header"
 	```
 
-17. You may want to deliver an initial set of data within a table – particular a configuration table. In this exercises we will learn how to create automatic data load configuration and the accompanying `CSV` files for just such a situation. 
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 14](14)]
+You may want to deliver an initial set of data within a table – particular a configuration table. In this exercises we will learn how to create automatic data load configuration and the accompanying `CSV` files for just such a situation. 
 
 	The data load for table requires two files – 1. An `csv` (comma separated) file which holds the data you want to load. 2. An `hdbtabledata` file which specifies the target table for a source `csv` file.
 
-18. You also have the `hdbtabledata` development object. This is the replacement for the old `hdbti` development object. Although the syntax of this object is new, the purpose is the same – to allow the loading of initial data from `CSV` files it target tables during their creation. 
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 15](15)]
+
+You also have the `hdbtabledata` development object. This is the replacement for the old `hdbti` development object. Although the syntax of this object is new, the purpose is the same – to allow the loading of initial data from `CSV` files it target tables during their creation. 
 
 	Create a file named `Purchase.hdbtabledata` and enter this text into it. Don’t forget to save the file afterwards. 
 
@@ -306,14 +358,20 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 	}
 	```
 
-19. You need some `CSV` files to hold some initial test data to be loaded by the `hdbtabledata` configuration file. Enter this data into a file named `header.csv` and save it.
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 16](16)]
+You need some `CSV` files to hold some initial test data to be loaded by the `hdbtabledata` configuration file. Enter this data into a file named `header.csv` and save it.
 
 	```
 	0500000000,0000000033,20120101,0000000033,20120101,9000000001,0100000000,EUR,13224.47,11113,2111.47,N,I,I,I,I
 	0500000001,0000000033,20120102,0000000033,20120102,9000000001,0100000002,EUR,12493.73,10498.94,1994.79,N,I,I,I,I
 	```
 
-20. And data for the item table named `item.csv`.  Don’t forget to save. 
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 17](17)]
+And data for the item table named `item.csv`.  Don’t forget to save. 
 
 	```
 	0500000000,0000000010,HT-1000,,EUR,1137.64,956,181.64,1,EA,20121204
@@ -337,7 +395,11 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 	0500000001,0000000090,HT-1002,,USD,3736.6,3140,596.6,2,EA,20121204
 	0500000001,0000000100,HT-1100,,USD,320.94,269.7,51.24,3,EA,20121204
 	```
-21. You also need synonyms now to access any table or view outside of our container.  Therefore you will create an `hdbsynonym` to allow us to access the dummy view. Enter this code into the file `general.hdbsynonym` and save.
+	
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 18](18)]
+You also need synonyms now to access any table or view outside of our container.  Therefore you will create an `hdbsynonym` to allow us to access the dummy view. Enter this code into the file `general.hdbsynonym` and save.
 
 	```
 	{
@@ -349,16 +411,23 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 		}	
 	}
 	```
-
-22. Create a procedures folder in the `src` folder. In the procedures folder you can create an `hdbprocedure` file via `New->Procedure`
+	
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 19](19)]
+Create a procedures folder in the `src` folder. In the procedures folder you can create an `hdbprocedure` file via `New->Procedure`
 
 	>The syntax for stored procedures hasn’t changed from previous levels of HANA.
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/12.png)
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/13.png)
+	
+[DONE]
+[ACCORDION-END]
 
-23. Here is the source of `getPOItems.hdbprocedure`
+[ACCORDION-BEGIN [STEP 20](20)]
+Here is the source of `getPOItems.hdbprocedure`
 
 	```
 	PROCEDURE "dev602.procedures::getPOItems" ( 
@@ -376,7 +445,9 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 	              from "dev602.data::PurchaseOrder.Item";
 	END
 	```
-
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 21](21)]
 24. All access to our HDI database objects from XSA is done automatically by the HDI container technical user. However if you want to allow access via other database users (for use cases such as external reporting tools) you must create a database role. Create another folder called roles.
 
 25. First you need to create a structured privilege. This is the logical successor to the analytic privilege and allows us to perform instance filtering for our `CDS` view you created earlier. Enter this code into the file `PurchaseOrder.hdbstructuredprivilege` and save.
@@ -427,7 +498,9 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 	}
 	}
 	```
-
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 22](22)]
 27. Now that you have your database development objects, you are ready to build the module which will create them in the HANA database. This process technically executes a `node.js` application which will call over to HANA and deploy these database artifacts into their container. Right mouse click on the `db` folder and choose Build.
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/14.png)
@@ -447,7 +520,9 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 31. Choose the container in the list that begins with your user name and end with your project name and then `hdi-container`. The string in the middle is the generated ID of your workspace. Click the Bind button. 
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/18.png)
-
+[DONE]
+[ACCORDION-END]
+[ACCORDION-BEGIN [STEP 23](23)]
 32. You now have a folder for your container which you can expand to see the various catalog objects you just created. 
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/19.png)
@@ -468,6 +543,8 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/23.png)
 
+[DONE]
+[ACCORDION-END]
 
 ## Next Steps
  - Select a tutorial from the [Tutorial Navigator](http://go.sap.com/developer/tutorial-navigator.html) or the [Tutorial Catalog](http://go.sap.com/developer/tutorials.html)
