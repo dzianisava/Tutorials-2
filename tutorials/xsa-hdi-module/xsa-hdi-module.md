@@ -502,11 +502,11 @@ Here is the source of `getPOItems.hdbprocedure`
 [ACCORDION-BEGIN [STEP 22](22)]
 27. Now that you have your database development objects, you are ready to build the module which will create them in the HANA database. This process technically executes a `node.js` application which will call over to HANA and deploy these database artifacts into their container. Right mouse click on the `db` folder and choose Build.
 
-![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/14.png)
+    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/14.png)
 
 28. Similar to the run activity of the web module earlier; the status of the build will be displayed in a window in the lower right side of the IDE. If everything worked correctly, you should see that the build completed successfully.
 
-![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/15.png)
+    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/15.png)
 
 29. There is a new database tool called the HANA Runtime Tools (or `HRTT`) that can be used to view and interact with HDI created content. Open a new browser tab and navigate to `http://vhcalhdb:51006` to access this tool.
 
@@ -518,7 +518,7 @@ Here is the source of `getPOItems.hdbprocedure`
 
 31. Choose the container in the list that begins with your user name and end with your project name and then `hdi-container`. The string in the middle is the generated ID of your workspace. Click the Bind button. 
 
-![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/18.png)
+    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/18.png)
 [DONE]
 [ACCORDION-END]
 [ACCORDION-BEGIN [STEP 23](23)]
