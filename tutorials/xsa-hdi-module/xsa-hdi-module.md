@@ -48,13 +48,12 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/4.png)
  
-[DONE]
-[ACCORDION-END] 
-[ACCORDION-BEGIN [STEP 2.1](2.1)]
 5. The wizard has created the `db` folder as well as the `hdi-container` resource and the `db` module in the `mta.yaml` file for you. 
 
 ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/5.png)
 
+[DONE]
+[ACCORDION-END] 
 [ACCORDION-BEGIN [STEP 3](3)]
 
 You will be able to see some of the additional files that the module creation wizard created if you choose `View->Show Hidden Files`  
