@@ -53,13 +53,13 @@ HDI introduces the concept of the container as an abstraction of the Schema. The
 [ACCORDION-BEGIN [STEP 2.1](2.1)]
 5. The wizard has created the `db` folder as well as the `hdi-container` resource and the `db` module in the `mta.yaml` file for you. 
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/5.png)
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/5.png)
 
 [ACCORDION-BEGIN [STEP 3](3)]
 
 You will be able to see some of the additional files that the module creation wizard created if you choose `View->Show Hidden Files`  
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/6.png)
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/6.png)
   
 [DONE]
 [ACCORDION-END] 
@@ -69,7 +69,7 @@ The `db/src` folder is where your actual database development objects belong. Th
 
 	The `.hdinamespace` file configures the package namespace for your development objects. As we no longer use the HANA Repository to hold design time objects, this file provides the same service as the folder structure in the Repository used to. 
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/7.png)
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/7.png)
     
 [DONE]
 [ACCORDION-END] 
@@ -79,7 +79,7 @@ In the `src` folder we will create several development objects. First create a f
 
 	Then `New->CDS Artifact` to create the core database tables and views in our application. 
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/8.png)	
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/8.png)	
 
 [DONE]
 [ACCORDION-END] 
@@ -87,7 +87,7 @@ In the `src` folder we will create several development objects. First create a f
 [ACCORDION-BEGIN [STEP 6](6)]
 Name the new CDS file `PurchaseOrder` and press Create
 	
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/9.png)	
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/9.png)	
 
 [DONE]
 [ACCORDION-END] 
@@ -234,14 +234,14 @@ The syntax for creating Entities is similar to types. Entities will become datab
 [ACCORDION-BEGIN [STEP 11](11)]
 With the tables we created, you use a unique order id number as the primary key. Therefore you need a sequence to have an auto incrementing unique id generated when new data is inserted. Create a new sequence by right-clicking on the data folder and choosing “New”, then “File”.
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/10.png)
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/10.png)
 
 [DONE]
 [ACCORDION-END]
 [ACCORDION-BEGIN [STEP 12](12)]
 Enter the name of the file as `orderId.hdbsequence`. Click “OK”.
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/11.png)
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/11.png)
 
 [DONE]
 [ACCORDION-END]
@@ -419,9 +419,9 @@ Create a procedures folder in the `src` folder. In the procedures folder you can
 
 	>The syntax for stored procedures hasn’t changed from previous levels of HANA.
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/12.png)
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/12.png)
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/13.png)
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/13.png)
 	
 [DONE]
 [ACCORDION-END]
@@ -503,11 +503,11 @@ Here is the source of `getPOItems.hdbprocedure`
 [ACCORDION-BEGIN [STEP 22](22)]
 27. Now that you have your database development objects, you are ready to build the module which will create them in the HANA database. This process technically executes a `node.js` application which will call over to HANA and deploy these database artifacts into their container. Right mouse click on the `db` folder and choose Build.
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/14.png)
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/14.png)
 
 28. Similar to the run activity of the web module earlier; the status of the build will be displayed in a window in the lower right side of the IDE. If everything worked correctly, you should see that the build completed successfully.
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/15.png)
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/15.png)
 
 29. There is a new database tool called the HANA Runtime Tools (or `HRTT`) that can be used to view and interact with HDI created content. Open a new browser tab and navigate to `http://vhcalhdb:51006` to access this tool.
 
@@ -519,7 +519,7 @@ Here is the source of `getPOItems.hdbprocedure`
 
 31. Choose the container in the list that begins with your user name and end with your project name and then `hdi-container`. The string in the middle is the generated ID of your workspace. Click the Bind button. 
 
-    ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/18.png)
+![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/18.png)
 [DONE]
 [ACCORDION-END]
 [ACCORDION-BEGIN [STEP 23](23)]
