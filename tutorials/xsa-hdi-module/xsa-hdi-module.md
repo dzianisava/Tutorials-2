@@ -519,6 +519,7 @@ Here is the source of `getPOItems.hdbprocedure`
 31. Choose the container in the list that begins with your user name and end with your project name and then `hdi-container`. The string in the middle is the generated ID of your workspace. Click the Bind button. 
 
     ![Login](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/xsa-hdi-module/18.png)
+
 [DONE]
 [ACCORDION-END]
 [ACCORDION-BEGIN [STEP 23](23)]
