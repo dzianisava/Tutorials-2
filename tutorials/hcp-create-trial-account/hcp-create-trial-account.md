@@ -21,6 +21,7 @@ This is a simple 8 step tutorial to walk through signing up for an account on HA
 
 ### Time to Complete
 **5 mins**
+
 ---
 
 1. Go to the [SAP HANA Cloud Platform](https://account.hanatrial.ondemand.com/) website and click on the **Register** button.
